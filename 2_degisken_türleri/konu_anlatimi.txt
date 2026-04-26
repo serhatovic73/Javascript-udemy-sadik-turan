@@ -1,0 +1,54 @@
+JavaScript'te değişken türleri (veri tipleri) iki ana gruba ayrılır: İlkel (Primitive) ve İlkel Olmayan (Reference) tipler. Bunu bir .txt dosyasına ekleyeceğin için yine en düzenli haliyle hazırladım.
+
+JAVASCRIPT VERİ TÜRLERİ (DATA TYPES)
+Veri türleri, bellekte sakladığımız verinin "ne olduğunu" (sayı mı, metin mi, nesne mi?) belirler.
+
+1. İLKEL (PRIMITIVE) VERİ TÜRLERİ
+Bu türler sadece tek bir değer tutarlar ve değiştirilemezler (immutable).
+
+String (Metin): Metinsel verilerdir. Tek, çift veya backtick tırnak içinde yazılırlar.
+
+let ad = "Deniz";
+
+Number (Sayı): Hem tam sayıları hem de ondalıklı sayıları kapsar.
+
+let yas = 25; | let pi = 3.14;
+
+Boolean (Mantıksal): Sadece iki değer alabilir: true (doğru) veya false (yanlış). Karar yapılarında kullanılır.
+
+let ehliyetVarMi = true;
+
+Undefined (Tanımsız): Bir değişken oluşturulmuş ama henüz içine bir değer atanmamışsa tipi budur.
+
+let x; // x şu an undefined.
+
+Null (Boş): Bir değişkenin içinin kasıtlı olarak "boş" olduğunu belirtmek için kullanılır.
+
+let sonuc = null;
+
+BigInt: Çok büyük tam sayıları temsil etmek için kullanılır (Number tipinin sınırlarını aşan sayılar için).
+
+Symbol: Benzersiz ve değiştirilemez değerler oluşturmak için kullanılır (Genelde ileri seviye kullanım).
+
+2. İLKEL OLMAYAN / REFERANS (REFERENCE) TİPLER
+Bu türler birden fazla değeri veya daha karmaşık yapıları tutabilirler.
+
+Object (Nesne): Süslü parantez {} içinde anahtar-değer (key-value) çiftleri tutar.
+
+let kullanici = { ad: "Ali", yas: 30 };
+
+Array (Dizi): Köşeli parantez [] içinde listeler tutar.
+
+let renkler = ["Kırmızı", "Mavi", "Yeşil"];
+
+Function (Fonksiyon): Belirli bir işi yapan kod bloklarıdır, JavaScript'te bunlar da birer nesne türüdür.
+
+3. TYPEOF OPERATÖRÜ (Tür Kontrolü)
+Bir değişkenin hangi türde olduğunu anlamak için typeof komutu kullanılır.
+
+JavaScript
+console.log(typeof "Merhaba"); // "string"
+console.log(typeof 42);        // "number"
+console.log(typeof true);      // "boolean"
+console.log(typeof {});        // "object"
+Önemli Not: JavaScript "dinamik tipli" (dynamically typed) bir dildir. Yani bir değişkeni önce sayı olarak tanımlayıp, sonra aynı değişkene metin atayabilirsin.

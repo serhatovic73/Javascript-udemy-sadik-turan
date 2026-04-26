@@ -1,0 +1,70 @@
+JavaScript değişkenler konusunu bir .txt dosyasına not alacakmışsın gibi en temiz, en düzenli ve anlaşılır haliyle aşağıya hazırladım. Bu metni kopyalayıp doğrudan not defterine yapıştırabilirsin.
+
+JAVASCRIPT DEĞİŞKENLER NOTLARI
+1. DEĞİŞKEN NEDİR?
+Verileri hafızada depolamak için kullanılan isimlendirilmiş kutulardır.
+
+2. TANIMLAMA YÖNTEMLERİ (var, let, const)
+
+let: - Değeri sonradan değiştirilebilir.
+
+Modern JavaScript'te standarttır.
+
+Sadece tanımlandığı blok { } içinde geçerlidir.
+Örn: let yas = 25; yas = 26; (Hata vermez)
+
+const (Constant):
+
+Sabit değerler için kullanılır.
+
+Değeri sonradan değiştirilemez.
+
+Tanımlandığı anda değer atanması zorunludur.
+Örn: const pi = 3.14;
+
+var:
+
+Eski yöntemdir.
+
+Hata yapmaya meyillidir (aynı değişken ismi tekrar tanımlanabilir).
+
+Modern projelerde kullanılması önerilmez.
+
+3. VERİ TİPLERİ (DATA TYPES)
+
+String: Metinler (Tırnak içinde yazılır).
+let isim = "Ahmet";
+
+Number: Sayılar (Tırnak kullanılmaz).
+let fiyat = 150.50;
+
+Boolean: Mantıksal değerler (Sadece iki ihtimal).
+let aktifMi = true; (veya false)
+
+Undefined: Tanımlanmış ama değer atanmamış değişken.
+let x; (Değeri undefined olur)
+
+Null: Bilinçli olarak "boş" bırakılan değer.
+let veri = null;
+
+4. İSİMLENDİRME KURALLARI
+
+Rakamla başlayamaz (1sayi YANLIŞ, sayi1 DOĞRU).
+
+Boşluk içeremez (kullanici adi YANLIŞ, kullaniciAdi DOĞRU).
+
+JavaScript büyük/küçük harf duyarlıdır (ad ile AD farklıdır).
+
+Türkçe karakter (ş, ç, ö, ğ, ı, ü) kullanılması önerilmez.
+
+5. ÖRNEK KOD BLOKLARI
+
+JavaScript
+// Değişken tanımlama
+let kullanici = "Ali";
+const DOGUM_YILI = 1995;
+let puan = 100;
+
+// Değer güncelleme
+puan = 110; // Doğru
+// DOGUM_YILI = 1996; // HATA! Const değiştirilemez.
