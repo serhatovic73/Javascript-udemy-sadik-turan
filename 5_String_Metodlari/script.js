@@ -26,3 +26,5 @@ sonuc = kursAdi.split(" ")[3]; //direk olarak 3. indexteki kelimeyi verir yani 4
 
 
 console.log(sonuc)
+
+//document : https://www.w3schools.com/js/js_string_methods.asp
